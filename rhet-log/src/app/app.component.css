@@ -1,0 +1,48 @@
+.inline-spacer {
+    padding-left: 16px;
+  }
+
+  .toolbar-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .nav-container {
+    position: absolute;
+    top: 64px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .main-catalog-container {
+      margin-top: 32px;
+      margin-bottom: 32px;
+      margin-left: 15%;
+      margin-right: 15%;
+  }
+
+  .main-card-button {
+      padding: 0;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      white-space: normal;
+  }
+
+  .main-card-item {
+      width: 100%;
+      height: 100%;
+      padding: 0;
+      text-align: start;
+      line-height: initial;
+      background-color: #efefef;
+  }
+
+  .filter-container {
+      float: left;
+      min-width: 64px;
+  }

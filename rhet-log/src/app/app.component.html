@@ -1,0 +1,48 @@
+<mat-toolbar class="toolbar-container" color="primary">
+  <button mat-icon-button class="drawer-icon" aria-label="pop out side navigation." (click)="sidenav.toggle()">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <img class="inline-spacer" height="32" src="https://cloud.redhat.com/apps/chrome/js/fonts/logo.svg" alt="Red Hat Logo">
+
+</mat-toolbar>
+
+<mat-sidenav-container class="nav-container">
+
+  <mat-sidenav #sidenav mode="side" color="primary">
+    <!-- nav content -->
+    <mat-action-list color="primary">
+      <button mat-list-item>Dashboard</button>
+      <mat-divider></mat-divider>
+      <button *ngFor="let product of etProducts;" mat-list-item>{{product}}</button>
+    </mat-action-list>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+
+
+    <!-- App Content: -->
+    <mat-grid-list class="main-catalog-container" cols="4" gutterSize="16">
+
+      <mat-grid-tile *ngFor="let pro of etProducts;">
+
+        <button class="main-card-button" mat-stroked-button>
+        <mat-card class="main-card-item" color="primary">
+          
+            <mat-card-header style="padding-top: 10%;">
+              <mat-card-title>{{pro}}</mat-card-title>
+              <mat-card-subtitle>by Red Hat</mat-card-subtitle>
+            </mat-card-header>
+
+            <mat-card-content>
+            </mat-card-content>
+          
+        </mat-card>
+
+        </button>
+
+      </mat-grid-tile>
+    </mat-grid-list>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

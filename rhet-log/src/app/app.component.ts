@@ -8,6 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'rhet-log';
 
+  etNavigation = [ 'Platforms',
+    'Automation',
+    'Security',
+    'Application Services',
+    'Integration' ];
+
+  // Obtain Product Catalog from public RH data:
   etProducts = [ 'OpenShift Container Platform', 
   'Advanced Cluster Security', 
   'Advanced Cluster Management', 
